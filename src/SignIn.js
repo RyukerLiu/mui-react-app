@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { green, purple } from '@mui/material/colors';
 
 function Copyright(props) {
     return (
@@ -27,8 +28,18 @@ function Copyright(props) {
 }
 
 // TODO remove, this demo shouldn't need to reset the theme.
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: '#0f8d9c',
+        },
+        secondary: {
+            main: green[500],
+        },
+    },
+});
 
-const defaultTheme = createTheme();
+const defaultTheme = theme;
 
 export default function SignIn() {
     const handleSubmit = (event) => {
@@ -52,7 +63,7 @@ export default function SignIn() {
                         alignItems: 'center',
                     }}
                 >
-                    <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+                    <Avatar sx={{ m: 1, bgcolor: 'primary.main' }}>
                         <LockOutlinedIcon />
                     </Avatar>
                     <Typography component="h1" variant="h5">

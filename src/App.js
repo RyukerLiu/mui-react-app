@@ -18,7 +18,6 @@ function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <MyApp />
       <SignIn />
     </React.Fragment>
   );
