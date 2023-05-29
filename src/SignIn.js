@@ -27,11 +27,11 @@ function Copyright(props) {
     );
 }
 
-// TODO remove, this demo shouldn't need to reset the theme.
+// Custom Theme
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#0f8d9c',
+            main: '#10a1b5',
         },
         secondary: {
             main: green[500],
