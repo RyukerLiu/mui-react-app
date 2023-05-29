@@ -1,7 +1,7 @@
 import './App.css';
 import * as React from "react";
 import CssBaseline from '@mui/material/CssBaseline';
-import SignInSide from './Template/SignInSide';
+import SignInSide from './Template/SignInSide.tsx';
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
