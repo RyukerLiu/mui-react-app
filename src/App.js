@@ -1,7 +1,7 @@
 import './App.css';
 import * as React from "react";
 import CssBaseline from '@mui/material/CssBaseline';
-import SignInSide from './Template/SignInSide';
+import SignIn from './Template/SignIn.tsx';
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -13,7 +13,7 @@ function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <SignInSide />
+      <SignIn />
     </React.Fragment>
   );
 }
